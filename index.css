@@ -1,0 +1,74 @@
+/* colour palette
+https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=90CAF9&secondary.color=BBDEFB&primary.text.color=212121
+ */
+
+:root {
+    --primary-colour: #90caf9;
+    --primary-colour-light: #c3fdff;
+    --primary-colour-dark: #5d99c6;
+    --primary-colour-text: #212121;
+
+}
+
+/* GLOBAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--primary-colour-text);
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: var(--primary-colour-dark);
+}
+
+/* NAVIGATION */
+
+#sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-colour-dark);
+    height: 40px;
+    font-size: 1.5em;
+    list-style: none;
+}
+
+#navbar li {
+    padding: 0 1rem;
+}
+
+@media (max-width: 600px) {
+    #navbar {
+        height: 20px;
+        font-size: 1em;
+    }
+}
+
+#push {
+    margin-left: auto;
+}
+
+
+a, a:visited {
+    text-decoration: none;
+    color: var(--primary-colour-text);
+}
+
+/* WELCOME SECTION */
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--primary-colour);
+}
+
