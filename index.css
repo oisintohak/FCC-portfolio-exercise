@@ -85,12 +85,13 @@ a:hover {
 
 .projects-section {
    background-color: var(--primary-colour-light);
+   padding: 6rem 0;
 }
 
 .projects-section-header {
     margin: 0;  
     text-align: center;
-    padding: 6rem 2rem;
+    padding-bottom: 6rem;
 }
 
 .projects-grid {
